@@ -5,7 +5,7 @@
 # ==============================================
 
 AUDIO_FILE="$1"
-API_KEY="OPENAI_API_KEY_AQUI"
+API_KEY="${OPENAI_API_KEY:?Erro: defina a variável OPENAI_API_KEY antes de rodar. Use: export OPENAI_API_KEY=sk-sua-chave}"
 LANGUAGE="pt"
 PROMPT="Reunião sobre mentoria de TI e IA na Construfic, loja de materiais de construção em Avaré SP. Participantes: Antonio Figueiredo (CEO), Zé Coelho (mentor), Daniel (TI), Diogo (gerente). Termos: ERP Santri, RAG, Data Lake, Metabase, dashboard, LGPD, WhatsApp Business, NF-e, chatbot, embeddings."
 MAX_SIZE=24000000  # 24MB em bytes
