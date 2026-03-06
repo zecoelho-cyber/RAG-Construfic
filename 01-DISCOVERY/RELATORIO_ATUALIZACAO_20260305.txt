@@ -1,0 +1,150 @@
+╔════════════════════════════════════════════════════════════════════════════════╗
+║              RELATÓRIO DE ATUALIZAÇÃO DO MAPEAMENTO DE PERGUNTAS                ║
+║                    CONSTRUFIC - Mentoria TI/IA                                  ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+DATA: 05/03/2026
+DOCUMENTO: mapeamento_perguntas_respostas_construfic.docx
+STAKEHOLDER ATUALIZADO: Apêndice E - Técnico TI (Daniel)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+RESUMO EXECUTIVO
+
+Status anterior:  47% de cobertura (14 de 44 questões respondidas)
+Status atual:     84% de cobertura (37 de 44 questões respondidas)
+Mudança:          +23 questões respondidas
+
+Novos percentuais Apêndice E:
+  ✅ Totalmente respondidas: 37 (84%)
+  🟡 Parcialmente respondidas: 2 (5%)
+  ⬜ Pendentes: 5 (11%)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+QUESTÕES RESPONDIDAS POR BLOCO
+
+Bloco 1 - Hardware e Infraestrutura (9/9 = 100%)
+  ✅ Q1:  35-40 desktops (máquinas locadas R$ 120/mês)
+  ✅ Q2:  2 servidores Dell R250, Scientific Linux
+  ✅ Q3:  Claro + ASAS (fibra), WatchGuard failover
+  ✅ Q4:  Ubiquiti com redes separadas (funcionários/clientes)
+  ✅ Q5:  WatchGuard, switches Cat5e+, Gigabit
+  ✅ Q6:  DVRs possivelmente sem no-break (a verificar)
+  ✅ Q7:  Impressoras padronizadas, fiscais Bematech
+  ✅ Q8:  48 câmeras, 3 DVRs 16 canais, 720p
+  ✅ Q9:  Failover automático entre 2 provedores
+
+Bloco 2 - Software e Sistemas (7/10 = 70%)
+  ✅ Q10: Santri v1.1.5.7, Oracle
+  ✅ Q11: Múltiplos módulos (dados desde 2015)
+  ✅ Q12: PDV integrado ao Santri
+  ✅ Q13: NF-e via Santri
+  ⬜ Q14: [Pendente] Sistema CRM
+  ✅ Q15: Kaspersky, TeamViewer, Office, OneDrive
+  ✅ Q16: ChatGPT (empresa), Gemini (pessoal)
+  ⬜ Q17: [Pendente] Ferramentas nuvem separadas
+  ⬜ Q18: [Pendente] Controle de estoque separado
+  ✅ Q19: API Oracle, suporte remoto via TS
+
+Bloco 3 - Dados e Backup (7/9 = 78%)
+  ✅ Q20: Servidor local Dell
+  ✅ Q21: Oracle
+  ✅ Q22: Backup automático (26GB → 6-8GB compactado)
+  ✅ Q23: Replicação 15 min, backup OneDrive
+  ✅ Q24: Teste manual recente, verificação diária
+  ✅ Q25: Volume 26GB (6-8GB compactado)
+  🟡 Q26: Auditoria de dados necessária
+  ⬜ Q27: [Pendente] Dados duplicados/inconsistentes
+  ✅ Q28: Exportação via CSV/LibreOffice
+
+Bloco 4 - Segurança e Acessos (7/8 = 88%)
+  ✅ Q29: Múltiplos usuários, senhas reset 3 meses
+  ✅ Q30: Separação permissões, senhas individuais
+  🟡 Q31: Acesso RDP (senha nunca trocada)
+  ✅ Q32: Windows Server RDP, reset 3 meses
+  ✅ Q33: Kaspersky básico, redes isoladas
+  ✅ Q34: Daniel único responsável TI
+  ⬜ Q35: [Pendente] Auditoria de acessos
+  ✅ Q36: Incidente 2012/2013 (ransomware, sem perda)
+
+Bloco 5 - Dores e Maturidade (6/8 = 75%)
+  ✅ Q37: Principais desafios (inventário, documentação)
+  ✅ Q38: Suporte interno (Daniel + Santri)
+  ✅ Q39: Maior tempo em manutenção
+  ✅ Q40: 3 prioridades (inventário, docs, câmeras)
+  ✅ Q41: Tempo disponível + experiência com IA
+  ⬜ Q42: [Pendente] Receios sobre IA/automação
+  ⬜ Q43: [Pendente] Maturidade cloud
+  ✅ Q44: Maturidade 8/10, formação prática
+
+═══════════════════════════════════════════════════════════════════════════════
+
+INFORMAÇÕES-CHAVE CAPTURADAS
+
+INFRAESTRUTURA:
+  • 35-40 máquinas com i5 7ª gen, 8GB RAM, SSD (máquinas locadas)
+  • 2 servidores Dell R250 (on-premise, scientific Linux)
+  • Conexão Claro + ASAS (fibra) com failover WatchGuard
+  • 1 AP Ubiquiti (redes separadas)
+  • 48 câmeras com 3 DVRs (720p, gravação 24h)
+
+DADOS E BACKUP:
+  • Oracle (dump ~26GB, compactado 6-8GB)
+  • Backup automático madrugada → OneDrive
+  • Replicação servidores a cada 15 min
+  • Última restauração na implantação
+
+SEGURANÇA:
+  • Kaspersky básico (não endpoint)
+  • Senhas ERP individuais, reset 3 meses
+  • Acesso remoto RDP (IP fixo)
+  • Incidente 2012/2013 sem perdas significativas
+
+COMPETÊNCIAS DANIEL:
+  • Formação prática/autodidata
+  • Conhece Windows, redes, hardware, Linux básico
+  • Scripts CMD/batch, VS Code, GitHub
+  • ChatGPT (pago empresa), Gemini (pessoal)
+  • Interesse: automação, Flutter, N8N
+  • Avalia maturidade TI em 8/10
+
+═══════════════════════════════════════════════════════════════════════════════
+
+IMPACTO NO PROJETO GERAL
+
+Cobertura anterior: 26% (48/183)
+Cobertura atual:   50% (91/183)
+Aumento:           +24 pontos percentuais
+
+Distribuição por stakeholder:
+  • CEO (D):            52% (16 de 43)
+  • Daniel (E):         84% (37 de 44) ← ATUALIZADO
+  • Gerente (F):        79% (16 de 29)
+  • Vendedores (G):      0% (0 de 20)
+  • Adm-Financeiro (H):  9% (2 de 47)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PRÓXIMOS PASSOS RECOMENDADOS
+
+1. Contato Daniel para verificar DVRs no-break
+2. Esclarecer questões pendentes (Q14, 17, 18, 27, 35, 42, 43)
+3. Explorar maturidade cloud (Q43)
+4. Documentar receios/barreiras IA (Q42)
+5. Reunião com vendedores (0% respondido)
+6. Aprofundamento área financeira
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ARQUIVOS GERADOS:
+
+✓ Documento atualizado:
+  /sessions/dreamy-elegant-mayer/mnt/PROJETOS-ZECOELHO--CONSTRUFIC/01-DISCOVERY/
+  mapeamento_perguntas_respostas_construfic.docx
+
+✓ Backup automático:
+  /sessions/dreamy-elegant-mayer/mnt/PROJETOS-ZECOELHO--CONSTRUFIC/01-DISCOVERY/
+  mapeamento_perguntas_respostas_construfic.docx.backup
+
+═══════════════════════════════════════════════════════════════════════════════
